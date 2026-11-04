@@ -1,0 +1,70 @@
+<!-- SECCIÓN 1: Gastronomy & Cocktails-->
+<section class="block">
+  <p class="kicker">GASTRONOMY & COCKTAILS</p>
+  <p>Discovering new flavours is an art. Our finest Michelin-starred chefs will take you into that world through smell, sight and imagination. Enjoy dishes full of colour, vitamins and little sweet treats: a true gourmet experience.
+  With us, awaken your palate to our local and national cuisine, accompanied by our red and white wines, with fruity and floral notes. </p>
+
+  <div class="carousel-wrap">
+    <button class="arrow left" (click)="track.scrollBy({ left: -400, behavior: 'smooth' })">‹</button>
+
+    <div class="carousel" #track>
+      @for (photo of gastroPhotos; track photo.src) {
+        <img [src]="photo.src" [alt]="photo.alt" />
+      }
+    </div>
+
+    <button class="arrow right" (click)="track.scrollBy({ left: 400, behavior: 'smooth' })">›</button>
+  </div>
+</section>
+
+<!-- SECCIÓN 2: BAR -->
+<section class="services-section">
+  <h2>Bar</h2>
+  <p>After a day in the sun or a gourmet experience in Sardinia, it’s time to unwind at night, or at happy hour, in our pool bar and club. A margarita with a Mexican kick, a cosmopolitan to dream of New York, or a mojito to dance salsa in Havana... Our bartenders will teleport you anywhere. </p>
+  
+  <div class="photo-mosaic-3">
+    <div class="mosaic-item main-img">
+      <img src="bar.jpg" alt="Bar main">
+    </div>
+    <div class="mosaic-side">
+      <img src="cocktail1.jpg" alt="Bar detail 1">
+      <img src="cocktail2.jpg" alt="Bar detail 2">
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN 3: WELLNESS & RELAX -->
+<section class="services-section">
+  <h2>Wellness & Relax</h2>
+  <p>A getaway, a holiday... sometimes you just need to switch off. Our Spa & Relax services 
+    are at your disposal: a thermal pool with aromatherapy, relaxing music, and a glass of 
+    champagne with chocolates and fruit. A massage, a facial or a body treatment. Our therapists 
+    will make your stay as pleasant as it can be.</p>
+  
+  <div class="photo-mosaic-4">
+      <img src="spa1.jpg" alt="Spa detail 1">
+      <img src="spa2.jpg" alt="Spa detail 2">
+      <img src="pool.jpg" alt="Pool">
+      <img src="spa3.jpg" alt="Spa detail 3">
+  </div>
+</section>
+
+<!-- SECCIÓN 4: THE HOTEL -->
+<section class="services-section">
+  <h2>The Hotel</h2>
+  <p>
+    Stay active with our fitness instructors and their personalised classes: aqua gym, yoga, pilates, zumba, padel and tennis. 
+    The lobby, an ideal place to welcome your guests, where you can wait for them with a cocktail or a glass of champagne. 
+    Our e-concierge looks after you personally: pending and available events, and bookings for events and excursions. 
+    Our chauffeurs are at your disposal 24 hours a day, for whatever you need. Cinema in your room, with the latest releases. 
+    Room service with a butler, hairdresser, make-up artists and laundry. We want your stay to be a paradise.
+  </p>
+ 
+  <div class="photo-mosaic-hotel">
+    <img src="beach.jpg" alt="Beach">
+    <img src="saphir.jpg" alt="Hotel">
+    <img src="lobby.jpg" alt="Lobby">
+    <img src="club.jpg" alt="club">
+    <img src="poolBar.jpg" alt="Pool bar">
+  </div>
+</section>

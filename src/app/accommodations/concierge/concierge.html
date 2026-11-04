@@ -1,0 +1,73 @@
+@if (sent()) {
+<section class="concierge-form">
+    <h2>Thank you</h2>
+    <p class="concierge-intro">
+        Your request has been received. We will contact you personally to prepare your stay.
+    </p>
+</section>
+} @else {
+<section class="concierge-form">
+    <h2>Concierge Request</h2>
+    <p class="concierge-intro">Tell us about your stay and we will personalise it for you.</p>
+
+    <form (ngSubmit)="send()">
+        <div class="row">
+            <div class="field">
+                <label for="firstName">First name</label>
+                <input type="text" id="firstName" name="firstName" [(ngModel)]="request.firstName" required />
+            </div>
+            <div class="field">
+                <label for="lastName">Last name</label>
+                <input type="text" id="lastName" name="lastName" [(ngModel)]="request.lastName" required />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="field">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" [(ngModel)]="request.phone" />
+            </div>
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" [(ngModel)]="request.email" required />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="field">
+                <label for="checkin">Check-in</label>
+                <input type="date" id="checkin" name="checkIn" [(ngModel)]="request.checkIn" required />
+            </div>
+            <div class="field">
+                <label for="checkout">Check-out</label>
+                <input type="date" id="checkout" name="checkOut" [(ngModel)]="request.checkOut" required />
+            </div>
+        </div>
+
+        <div class="field">
+            <label for="roomChoice">Room</label>
+            <select id="roomChoice" name="roomChoice" [(ngModel)]="request.roomChoice" required>
+                <option value="" disabled>Select your room</option>
+                @for (r of rooms; track r.name) {
+                <option [value]="r.name">{{ r.category }} · {{ r.name }}</option>
+                }
+            </select>
+        </div>
+
+        <fieldset class="extras">
+            <legend>Extras</legend>
+            <label><input type="checkbox" name="butler" [(ngModel)]="request.butler" /> Butler</label>
+            <label><input type="checkbox" name="room" [(ngModel)]="request.room" /> Your room</label>
+            <label><input type="checkbox" name="vip" [(ngModel)]="request.vip" /> VIP assistant</label>
+        </fieldset>
+
+        <div class="field">
+            <label for="wishes">Tell us your expectations and wishes (check our extras)</label>
+            <textarea id="wishes" name="wishes" rows="4" [(ngModel)]="request.wishes"
+                placeholder="Let us know any special requests or preferences you have for your stay..."></textarea>
+        </div>
+
+        <button type="submit">Request a personalised reservation</button>
+    </form>
+</section>
+}

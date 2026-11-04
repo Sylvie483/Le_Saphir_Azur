@@ -1,0 +1,56 @@
+:host { display: block; }
+
+.room-card {
+  background: #fff;
+  border: 1px solid rgba(184, 134, 11, 0.35);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.room-photos {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4px;
+}
+.room-photos img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+.room-info {
+  padding: 1.5rem 1.5rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.category {
+  letter-spacing: 0.3em;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #b8892b;
+  margin: 0 0 0.5rem;
+}
+.room-info h2 {
+  font-family: 'Cormorant Garamond', 'Cinzel', serif;
+  font-size: 1.9rem;
+  font-weight: 500;
+  color: #ccb010;
+  margin: 0 0 1rem;
+}
+.room-info p { 
+line-height: 1.8; 
+font-size: 0.95rem; 
+color: #4668db;
+}
+.price {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(184, 134, 11, 0.35);
+  letter-spacing: 0.15em;
+  font-weight: 600;  
+}
+.room-info .price {
+  color: #000;
+}

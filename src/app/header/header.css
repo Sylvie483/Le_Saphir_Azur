@@ -1,0 +1,66 @@
+:host {
+  display: block;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.hotel-header {
+  background-color: #EFECE4; 
+  border-bottom: 1px solid #B8860B; 
+  padding: 0.4rem 1rem 0.4rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+/* Logo centrado */
+.brand {
+  margin-bottom: 0.3rem;
+  
+}
+.hotel-logo {
+  max-width: 100px; 
+  height: auto;
+  display: inline-block;
+  object-fit: contain;
+}
+
+/* Menú de navegación abajo */
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.nav-menu a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #4668db;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+/* Efecto al pasar el ratón por encima */
+.nav-menu a:hover {
+  color: #B8860B;
+}
+
+.nav-menu a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: 0;
+  left: 50%;
+  background-color: #C5A059;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-menu a:hover::after {
+  width: 100%;
+}

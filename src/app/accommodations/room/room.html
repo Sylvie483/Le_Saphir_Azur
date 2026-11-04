@@ -1,0 +1,12 @@
+<section class="room-card">
+  <div class="room-photos">
+    <img [src]="room.picture" [alt]="room.name" />
+    <img [src]="room.bathroomPicture" [alt]="room.name + ' bathroom'" />
+  </div>
+
+  <div class="room-info">
+    <h2>{{ room.name }}</h2>
+    <p>{{ room.description }}</p>
+    <p class="price">{{ room.priceNight }} € / night</p>
+  </div>
+</section>

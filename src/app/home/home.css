@@ -1,0 +1,64 @@
+.hero {
+  min-height: 85vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.15)),
+    url('/nightView.jpg') center / cover no-repeat;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 2rem 1.5rem 18 rem;
+  padding-top: 22vh;
+}
+
+.hero h1 {
+  font-family: 'Cormorant Garamond', 'Cinzel', serif;
+  font-size: clamp(2.5rem, 7vw, 4.5rem);
+  font-weight: 500;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin: 0 0 1rem;
+}
+
+.hero-tagline {
+  font-style: italic;
+  font-size: 800;
+  line-height: 1.7;
+  max-width: 640px;
+  margin: 0 auto 2.2rem;
+}
+
+.hero-btn {
+  display: inline-block;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 0.9rem 2rem;
+  letter-spacing: 0.2em;
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.hero h1,
+.hero-tagline {
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+}
+
+.hero-btn:hover { background: #fff; color: #333; }
+
+.welcome {
+  max-width: 720px;
+  margin: 5rem auto;
+  padding: 0 1.5rem;
+  text-align: center;
+  color: #3910cc;
+}
+.kicker {
+  letter-spacing: 0.35em;
+  font-size: 0.9rem;
+  color: #b8892b;
+  margin-bottom: 1.8rem;
+  font-weight: 700;
+}
+.welcome p { line-height: 1.9; margin-bottom: 1.2rem; }

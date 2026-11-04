@@ -1,0 +1,47 @@
+<main class="accommodations-page">
+
+  <!-- 1. BARRA DE FECHAS "ESTANCIA" -->
+  <section class="estancia-bar">
+    <div class="estancia-field">
+      <label for="checkin">Check-in</label>
+      <input type="date" id="checkin" />
+    </div>
+    <div class="estancia-divider"></div>
+    <div class="estancia-field">
+      <label for="checkout">Check-out</label>
+      <input type="date" id="checkout" />
+    </div>
+  </section>
+
+  <!-- 2. CATÁLOGO DE HABITACIONES -->
+  <section class="rooms-catalog">
+    @for (bedRoom of rooms; track bedRoom.name) {
+      <app-room [room]="bedRoom"/>
+    }
+  </section>
+  <!-- 3. TEXTO EDITORIAL (SERVICIOS Y BIENVENIDA) -->
+  <section class="accommodations-editorial">
+    <div class="editorial-block">
+      <h3>Butler</h3>
+      <p>Unpacking and arranging your belongings in the wardrobes and bathroom.</p>
+    </div>
+
+    <div class="editorial-block">
+      <h3>Your room</h3>
+      <p>Artisan soaps or aromatherapy for your shower or bath, special pillows or bed linen on request, and laundry service. Cinema with the latest releases whenever you wish. High-quality Wi-Fi.</p>
+    </div>
+
+    <div class="editorial-block">
+      <h3>VIP assistant</h3>
+      <p>Restaurant reservations, a chauffeur, flight itineraries or sightseeing, wake-up calls, ice, food and drinks, and a yacht with crew to discover the islands. Hairdresser, beauty treatments and a boutique for clothes, accessories and jewellery.</p>
+    </div>
+
+    <div class="editorial-block">
+      <h3>Welcome</h3>
+      <p>Every Standard and Superior room is welcomed with a basket of fruit, Belgian chocolates and a bottle of champagne or premium cava of the guest’s choice. Suites and Premium rooms receive a basket of fruit, personalised Belgian chocolates, a bottle of Dom Pérignon champagne and a tasting menu by Chef Aristide.</p>
+      <p>Our motto is to take you to paradise with every comfort. Please remember to fill in the form to receive personalised assistance.</p>
+    </div>
+  </section>
+
+  <app-concierge [rooms]="rooms" />
+</main>

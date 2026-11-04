@@ -1,0 +1,156 @@
+.contact-section {
+  background-color: #d1dcec;
+  color: #EFECE4;
+  padding: 6rem 2rem;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 80vh;
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(3.5rem, 6vw, 5rem);
+  font-weight: 300;
+  color: #4668db; 
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-size: 0.85rem;
+  letter-spacing: 4px;
+  color: #B8860B;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.divider {
+  width: 50px;
+  height: 1px;
+  background-color: #B8860B;
+  margin: 1.5rem auto 0 auto;
+}
+
+.contact-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.info-card {
+  background-color: rgba(239, 236, 228, 0.02);
+  border: 1px solid rgba(239, 236, 228, 0.08);
+  padding: 2.5rem 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(184, 134, 11, 0.4);
+}
+
+.card-icon {
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.info-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  color: #B8860B;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.info-card p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+  color: #4e3a03;
+  line-height: 1.5;
+}
+
+.info-card .highlight {
+  color: #4e3a03;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.info-card .caption {
+  font-size: 0.8rem;
+  color: #4e3a03;
+  margin-top: 0.8rem;
+}
+
+.info-card a {
+  color: #4e3a03;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.info-card a:hover {
+  color: #64FFDA;
+}
+
+/* Sección Mapa */
+.map-section {
+  background-color: rgba(239, 236, 228, 0.02);
+  border: 1px solid rgba(239, 236, 228, 0.08);
+  padding: 2rem;
+}
+
+.map-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.map-title-group h3 {
+  font-family: 'Cormorant Garamond', serif;
+  color: #ac8a2c;
+  font-size: 1.8rem;
+  margin: 0 0 0.3rem 0;
+  font-weight: 400;
+}
+
+.map-title-group p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #4e3a03;
+}
+
+.btn-directions {
+  color: #B8860B;
+  text-decoration: none;
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border: 1px solid #B8860B;
+  padding: 0.6rem 1.4rem;
+  transition: all 0.3s ease;
+}
+
+.btn-directions:hover {
+  background-color: #B8860B;
+  color: #0A192F;
+}
+
+.map-frame {
+  width: 100%;
+  border: 1px solid rgba(239, 236, 228, 0.1);
+  overflow: hidden;
+}
